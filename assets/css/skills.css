@@ -1,0 +1,72 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .hard ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.skills .hard ul li i{
+    font-size: 50px;
+    margin: 0 .5rem;
+}
+
+.skills .soft ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.skills .soft ul li{
+    font-size: 20px;
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills .hard ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 50%;
+        width: 55%;
+        flex-direction: row;
+        margin-left: 5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    .skills .soft ul{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .skills .hard ul li i{
+        font-size: 50px;
+        margin: 8px    
+    }
+      
+}

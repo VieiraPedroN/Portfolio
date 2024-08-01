@@ -1,0 +1,80 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header .point{
+    position: absolute;
+    top: 1px;
+    right: 2px;
+}
+
+.header .profile{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.title{
+    font-size: 4rem;
+}
+
+.header .title{
+    font-family: 'Neue Machina';
+    text-align: center;
+}
+
+.iform{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.iform p {
+    margin: .3rem;
+}
+
+.iform p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.iform p a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+        'profile title'
+        'profile iform'
+    }
+
+    .header .profile{
+        grid-area: profile;
+        margin: 0 auto;
+    }
+    .header .title{
+        grid-area: title;
+        text-align: start;
+        max-width: 100%;
+    }
+    .header .iform{
+        grid-area: iform;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .title{
+        font-size: 2rem
+    }
+    .header .profile{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
