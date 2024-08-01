@@ -1,4 +1,4 @@
-.projetos{
+.projetos {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -8,14 +8,14 @@
     list-style: none;
 }
 
-.projetos li{
+.projetos li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 1rem 0;
 }
 
-.projetos li .title{
+.projetos li .title {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,17 +24,18 @@
     margin-bottom: 7px;
 }
 
-.projetos li a{
-    display: flex;
-    color: #fff;
+.projetos li a {
+    display: block;
+    width: 100%;
     text-decoration: none;
+    word-break: break-word; 
+    overflow-wrap: break-word;
 }
 
-.projetos li a:hover{
-    color: #fff;
+.projetos li a:hover {
     text-decoration: underline;
 }
 
-.projetos li i{
+.projetos li i {
     margin-right: 5px;
 }
