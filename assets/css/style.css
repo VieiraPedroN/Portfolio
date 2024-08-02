@@ -23,6 +23,7 @@
 }
 
 .header .title{
+    color: #fff;
     font-family: 'Neue Machina';
     text-align: center;
 }
@@ -46,6 +47,10 @@
 .iform p a:hover{
     color: #fff;
     text-decoration: underline;
+}
+
+.iform i{
+    color: #fff;
 }
 
 @media only screen and (min-width: 768px) {

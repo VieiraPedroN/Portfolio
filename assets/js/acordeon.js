@@ -7,8 +7,10 @@ acordeonTriggers.forEach((trigger) => {
 
         if (isOpen) {
             acordeon.classList.remove('open')
+            content.style.height = '0';
         }else{
             acordeon.classList.add('open')
+            content.style.height = content.scrollHeight + 'px';
         }
     })
 })
