@@ -8,6 +8,15 @@
     src: url('/assets/fonts/neue-machina.zip');
 }
 
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.background {
+    height: 100vh;
+}
+
 .background {
     position: fixed;
     top: 0;
@@ -16,12 +25,12 @@
     height: 100%;
     background-image: url('/assets/img/4173639.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-    color: #fff;
     pointer-events: none;
+    color: #fff;
 }
+
 
 
 .main{
